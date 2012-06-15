@@ -23,7 +23,11 @@ $thumb_img = image_thumb(array("width"=>"200","height"=>"200","media/image/photo
 
 
 // with html helper
+
 // echo img($thumb_img);
 
 // html
+
 // <img src="<?php echo $thumb_img;?> " alt="" />
+
+
