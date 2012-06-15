@@ -1,1 +1,9 @@
+<<<<<<< HEAD
 /nbproject
+=======
+*/config/development
+*/logs/log-*.php
+*/logs/!index.html
+*/cache/*
+*/cache/!index.html
+>>>>>>> 46381304a19cabb1c92990cd2e1adeaba06e742c
