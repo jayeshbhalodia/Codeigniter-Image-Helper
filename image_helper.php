@@ -22,7 +22,7 @@ if (!defined('BASEPATH'))
  *    - gd2 enable on server.
  * @return string file path. 
  */
-function image_thumb($size, $file_source) {
+function image_thumb($size, $file_source, $concat_base_url = true) {
     // get master object
     $CI = & get_instance();
 
@@ -42,6 +42,9 @@ function image_thumb($size, $file_source) {
 
     // if file has been exists then directly return that path.
     if (file_exists($file_path)) {
+        if ($concat_base_url) {
+            return base_url() . $file_path;
+        }
         return $file_path;
     }
 
@@ -74,6 +77,9 @@ function image_thumb($size, $file_source) {
     if (!$CI->image_lib->resize()) {
         echo $CI->image_lib->display_errors();
     } else {
+        if ($concat_base_url) {
+            return base_url() . $file_path;
+        }
         return $file_path;
     }
     // clear last configuration.
