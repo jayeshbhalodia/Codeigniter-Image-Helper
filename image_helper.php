@@ -7,7 +7,7 @@ if (!defined('BASEPATH'))
  * @author Jayesh Bhalodia {jayeshbhalodia@ymail.com}
  * 
  *  image manipulation helper
- *  it should be used for generate dynamic thumbnail with its associated parameters. 
+ *  it would be used for generate dynamic thumbnail with its associated parameters. 
  */
 
 /**
