@@ -22,7 +22,7 @@ Example
 // with html helper
 // echo img($thumb_img);
 // html
-// &lt;img src="&lt;?php echo $thumb_img; ?&gt" alt="" /&gt;
+// &lt;img src="&lt;?php echo $thumb_img; ?&gt;" alt="" /&gt;
 
 
 
